@@ -23,3 +23,30 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.gallery {display: flex;
+  list-style-type: none; 
+
+  flex-wrap: wrap;
+}
+
+.gallery-image{width: 100%;
+  height: auto;}
+
+.gallery-item {
+width: calc((100% - 3 * 24px) / 3); 
+
+  margin-right: 24px; 
+  margin-bottom: 24px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+ 
+
+}
+
+
+.gallery-item:nth-child(3n) {
+  margin-right: 0;
+}
+.gallery-item:hover {  transform: scale(1.05);
+}
